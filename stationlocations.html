@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1a4dd043559188a803770692eed4ac9f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1a4dd043559188a803770692eed4ac9f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1a4dd043559188a803770692eed4ac9f = L.map(
+                "map_1a4dd043559188a803770692eed4ac9f",
+                {
+                    center: [47.06522042857143, 15.437197857142857],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_1a4dd043559188a803770692eed4ac9f);
+
+            
+
+        
+    
+            var tile_layer_c6d37a24feba0e8181ecadf7140ab11a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1a4dd043559188a803770692eed4ac9f);
+        
+    
+            var tile_layer_17c79df2af163f2109f814b5c3d54fc4 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1a4dd043559188a803770692eed4ac9f);
+        
+    
+            var marker_ff11c69eb064149f2f195beab666e87a = L.marker(
+                [47.09437, 15.415122],
+                {}
+            ).addTo(map_1a4dd043559188a803770692eed4ac9f);
+        
+    
+            var div_icon_b434c6434803637f4015c990ef846445 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; text-align: center; color: white; background: url(https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png) no-repeat; background-size: 25px 41px; width: 25px; height: 41px; line-height: 46px;\"\u003e1\u003c/div\u003e"});
+            marker_ff11c69eb064149f2f195beab666e87a.setIcon(div_icon_b434c6434803637f4015c990ef846445);
+        
+    
+        var popup_d44bbb794c83144fa55b992e2c624fd6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b121947f6b5eb3d955f815e3a63169c2 = $(`<div id="html_b121947f6b5eb3d955f815e3a63169c2" style="width: 100.0%; height: 100.0%;"><strong>Graz-Nord</strong><br>Latitude: 47.09437<br>Longitude: 15.415122</div>`)[0];
+                popup_d44bbb794c83144fa55b992e2c624fd6.setContent(html_b121947f6b5eb3d955f815e3a63169c2);
+            
+        
+
+        marker_ff11c69eb064149f2f195beab666e87a.bindPopup(popup_d44bbb794c83144fa55b992e2c624fd6)
+        ;
+
+        
+    
+    
+            var marker_694d4d881b536b3fb119d327995637f6 = L.marker(
+                [47.069231, 15.431542],
+                {}
+            ).addTo(map_1a4dd043559188a803770692eed4ac9f);
+        
+    
+            var div_icon_f39a6bfa8f6c224bb908d824c8fcb93d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; text-align: center; color: white; background: url(https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png) no-repeat; background-size: 25px 41px; width: 25px; height: 41px; line-height: 46px;\"\u003e2\u003c/div\u003e"});
+            marker_694d4d881b536b3fb119d327995637f6.setIcon(div_icon_f39a6bfa8f6c224bb908d824c8fcb93d);
+        
+    
+        var popup_bb721e5f8219394dc8e17f5cb96cca12 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_383ccb83d43344d453c58203d09045a1 = $(`<div id="html_383ccb83d43344d453c58203d09045a1" style="width: 100.0%; height: 100.0%;"><strong>Graz-Mitte Gries</strong><br>Latitude: 47.069231<br>Longitude: 15.431542</div>`)[0];
+                popup_bb721e5f8219394dc8e17f5cb96cca12.setContent(html_383ccb83d43344d453c58203d09045a1);
+            
+        
+
+        marker_694d4d881b536b3fb119d327995637f6.bindPopup(popup_bb721e5f8219394dc8e17f5cb96cca12)
+        ;
+
+        
+    
+    
+            var marker_3212486a7526d7de99022646fb2ba841 = L.marker(
+                [47.066597, 15.493742],
+                {}
+            ).addTo(map_1a4dd043559188a803770692eed4ac9f);
+        
+    
+            var div_icon_3bed852d68d905c5817eda5c7f01048a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; text-align: center; color: white; background: url(https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png) no-repeat; background-size: 25px 41px; width: 25px; height: 41px; line-height: 46px;\"\u003e3\u003c/div\u003e"});
+            marker_3212486a7526d7de99022646fb2ba841.setIcon(div_icon_3bed852d68d905c5817eda5c7f01048a);
+        
+    
+        var popup_9ad29fe9726c7e8a00ca432b83bae1b9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e3378a20d11c586d654edd0b8758b170 = $(`<div id="html_e3378a20d11c586d654edd0b8758b170" style="width: 100.0%; height: 100.0%;"><strong>Graz-Lustbühel</strong><br>Latitude: 47.066597<br>Longitude: 15.493742</div>`)[0];
+                popup_9ad29fe9726c7e8a00ca432b83bae1b9.setContent(html_e3378a20d11c586d654edd0b8758b170);
+            
+        
+
+        marker_3212486a7526d7de99022646fb2ba841.bindPopup(popup_9ad29fe9726c7e8a00ca432b83bae1b9)
+        ;
+
+        
+    
+    
+            var marker_97f5c1b3923c1a5c3c988ef2d7078d3d = L.marker(
+                [47.055617, 15.416539],
+                {}
+            ).addTo(map_1a4dd043559188a803770692eed4ac9f);
+        
+    
+            var div_icon_0bed3b22aec45a03a150d1849d93b502 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; text-align: center; color: white; background: url(https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png) no-repeat; background-size: 25px 41px; width: 25px; height: 41px; line-height: 46px;\"\u003e4\u003c/div\u003e"});
+            marker_97f5c1b3923c1a5c3c988ef2d7078d3d.setIcon(div_icon_0bed3b22aec45a03a150d1849d93b502);
+        
+    
+        var popup_4b68fc80e7f56f9c99ddd90b10608459 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_612295fc8a9627e0ea2c48a7f5c9f9d8 = $(`<div id="html_612295fc8a9627e0ea2c48a7f5c9f9d8" style="width: 100.0%; height: 100.0%;"><strong>Graz-Don Bosco</strong><br>Latitude: 47.055617<br>Longitude: 15.416539</div>`)[0];
+                popup_4b68fc80e7f56f9c99ddd90b10608459.setContent(html_612295fc8a9627e0ea2c48a7f5c9f9d8);
+            
+        
+
+        marker_97f5c1b3923c1a5c3c988ef2d7078d3d.bindPopup(popup_4b68fc80e7f56f9c99ddd90b10608459)
+        ;
+
+        
+    
+    
+            var marker_c529873933f9aea0cf067e7be85d8290 = L.marker(
+                [47.05953, 15.466634],
+                {}
+            ).addTo(map_1a4dd043559188a803770692eed4ac9f);
+        
+    
+            var div_icon_3e4c5d4f31d6f237bdd9bcadf8749034 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; text-align: center; color: white; background: url(https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png) no-repeat; background-size: 25px 41px; width: 25px; height: 41px; line-height: 46px;\"\u003e5\u003c/div\u003e"});
+            marker_c529873933f9aea0cf067e7be85d8290.setIcon(div_icon_3e4c5d4f31d6f237bdd9bcadf8749034);
+        
+    
+        var popup_8544eb9c523131432bb2883ef3374ec0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_464d82e8f49f3c4cab508e948bb35c61 = $(`<div id="html_464d82e8f49f3c4cab508e948bb35c61" style="width: 100.0%; height: 100.0%;"><strong>Graz-Ost Petersgasse</strong><br>Latitude: 47.05953<br>Longitude: 15.466634</div>`)[0];
+                popup_8544eb9c523131432bb2883ef3374ec0.setContent(html_464d82e8f49f3c4cab508e948bb35c61);
+            
+        
+
+        marker_c529873933f9aea0cf067e7be85d8290.bindPopup(popup_8544eb9c523131432bb2883ef3374ec0)
+        ;
+
+        
+    
+    
+            var marker_5527002df77813fe1b8537a0a09f3572 = L.marker(
+                [47.041692, 15.433078],
+                {}
+            ).addTo(map_1a4dd043559188a803770692eed4ac9f);
+        
+    
+            var div_icon_f3d755158d790d61d7880f836d081e13 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; text-align: center; color: white; background: url(https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png) no-repeat; background-size: 25px 41px; width: 25px; height: 41px; line-height: 46px;\"\u003e6\u003c/div\u003e"});
+            marker_5527002df77813fe1b8537a0a09f3572.setIcon(div_icon_f3d755158d790d61d7880f836d081e13);
+        
+    
+        var popup_2038436b262040b8a9d0945cc1632799 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e762e1bf280114dc6d8aafcccc2a574e = $(`<div id="html_e762e1bf280114dc6d8aafcccc2a574e" style="width: 100.0%; height: 100.0%;"><strong>Graz-Süd Tiergartenweg</strong><br>Latitude: 47.041692<br>Longitude: 15.433078</div>`)[0];
+                popup_2038436b262040b8a9d0945cc1632799.setContent(html_e762e1bf280114dc6d8aafcccc2a574e);
+            
+        
+
+        marker_5527002df77813fe1b8537a0a09f3572.bindPopup(popup_2038436b262040b8a9d0945cc1632799)
+        ;
+
+        
+    
+    
+            var marker_6b5ed966fdd66bc6f6db15b687029bd3 = L.marker(
+                [47.069506, 15.403728],
+                {}
+            ).addTo(map_1a4dd043559188a803770692eed4ac9f);
+        
+    
+            var div_icon_0a7b0d2e7dbb7c67c24f127700c8fb68 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; text-align: center; color: white; background: url(https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png) no-repeat; background-size: 25px 41px; width: 25px; height: 41px; line-height: 46px;\"\u003e7\u003c/div\u003e"});
+            marker_6b5ed966fdd66bc6f6db15b687029bd3.setIcon(div_icon_0a7b0d2e7dbb7c67c24f127700c8fb68);
+        
+    
+        var popup_e1f5c40dbc14a16060d6a18d29839c94 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_859e313aa48047753f65e1f28b3f69e6 = $(`<div id="html_859e313aa48047753f65e1f28b3f69e6" style="width: 100.0%; height: 100.0%;"><strong>Graz-West</strong><br>Latitude: 47.069506<br>Longitude: 15.403728</div>`)[0];
+                popup_e1f5c40dbc14a16060d6a18d29839c94.setContent(html_859e313aa48047753f65e1f28b3f69e6);
+            
+        
+
+        marker_6b5ed966fdd66bc6f6db15b687029bd3.bindPopup(popup_e1f5c40dbc14a16060d6a18d29839c94)
+        ;
+
+        
+    
+    
+            var layer_control_fc747e075b0b77f91ae8aa61435ea775 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c6d37a24feba0e8181ecadf7140ab11a,
+                    "Google Satellite" : tile_layer_17c79df2af163f2109f814b5c3d54fc4,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_fc747e075b0b77f91ae8aa61435ea775.base_layers,
+                layer_control_fc747e075b0b77f91ae8aa61435ea775.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1a4dd043559188a803770692eed4ac9f);
+            tile_layer_17c79df2af163f2109f814b5c3d54fc4.remove();
+        
+</script>
+</html>
